@@ -1,11 +1,10 @@
 {
-    "domain": "simple_local_tuya",
-    "name": "Simple Local Tuya (Protocol 3.5)",
-    "codeowners": ["@Windear"],
-    "config_flow": true,
-    "documentation": "https://github.com/Windear/local_tuya_3.5",
-    "issue_tracker": "https://github.com/Windear/local_tuya_3.5/issues",
-    "iot_class": "local_polling",
-    "version": "1.1.0",
-    "requirements": ["tinytuya==1.15.0"]
-  }
+  "domain": "simple_local_tuya",
+  "name": "炬为库伦计 (涂鸦Protocol 3.5)",
+  "config_flow": true,
+  "documentation": "https://github.com/Windear/local_tuya_3.5",
+  "issue_tracker": "https://github.com/Windear/local_tuya_3.5/issues",
+  "iot_class": "local_polling",
+  "version": "1.3.0",
+  "requirements": ["tinytuya==1.15.0"]
+}

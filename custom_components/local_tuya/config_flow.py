@@ -13,7 +13,6 @@ class SimpleLocalTuyaConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 data=user_input
             )
 
-        # 默认留空，防止上传 GitHub 泄露
         default_ip = "" 
         default_id = ""
         default_key = ""

@@ -6,5 +6,5 @@ CONF_IP_ADDRESS = "ip_address"
 CONF_LOCAL_KEY = "local_key"
 CONF_VERSION = "version"
 
-# 核心修改：改为 1 秒刷新，实现“实时”效果
+# 1秒轮询，保证极速模式下的实时性
 UPDATE_INTERVAL = 1
