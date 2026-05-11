@@ -43,8 +43,8 @@ Tested on:
 6.  Restart Home Assistant.
 
 #### Method 2: Manual
-1.  Download the `custom_components/local_tuya` folder from this repository.
-2.  Copy it into your Home Assistant's `config/custom_components/` directory (the final path should be `config/custom_components/local_tuya/`).
+1.  Download the `custom_components/simple_local_tuya` folder from this repository.
+2.  Copy it into your Home Assistant's `config/custom_components/` directory (the final path should be `config/custom_components/simple_local_tuya/`).
 3.  Restart Home Assistant.
 
 ### 🔑 How to Get Device ID and Local Key
@@ -142,8 +142,8 @@ You need both the **Device ID** and **Local Key** to connect. Here's how to get 
 6.  重启 Home Assistant。
 
 #### 方法 2: 手动安装
-1.  下载本仓库中的 `custom_components/local_tuya` 文件夹。
-2.  将其复制到 Home Assistant 配置目录下的 `config/custom_components/` 中（最终路径应为 `config/custom_components/local_tuya/`）。
+1.  下载本仓库中的 `custom_components/simple_local_tuya` 文件夹。
+2.  将其复制到 Home Assistant 配置目录下的 `config/custom_components/` 中（最终路径应为 `config/custom_components/simple_local_tuya/`）。
 3.  重启 Home Assistant。
 
 ### 🔑 如何获取 Device ID 和 Local Key
