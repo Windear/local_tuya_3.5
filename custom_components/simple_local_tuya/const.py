@@ -6,5 +6,6 @@ CONF_IP_ADDRESS = "ip_address"
 CONF_LOCAL_KEY = "local_key"
 CONF_VERSION = "version"
 
-# 1秒轮询，保证极速模式下的实时性
-UPDATE_INTERVAL = 1
+FAST_UPDATE_INTERVAL = 1     # 极速模式：1秒轮询
+SLOW_UPDATE_INTERVAL = 10    # 正常模式：10秒轮询
+FAST_MODE_TIMEOUT = 180      # 极速模式3分钟后自动关闭

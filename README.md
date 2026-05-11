@@ -20,11 +20,12 @@ This integration solves common issues found in the standard `LocalTuya` or offic
 
 *   **Local Control**: Uses local TCP connections via `tinytuya`. No cloud dependence, no latency.
 *   **Protocol 3.5 Support**: Optimized for newer devices using Tuya Protocol 3.4/3.5 which require persistent connections.
-*   **Real-time Refresh**: Polls data every **1 second** for instant feedback.
+*   **Real-time Refresh**: Default 10-second polling. Enable **Fast Refresh** switch for **1-second** real-time data.
 *   **Bi-directional Support**: Correctly parses signed integers to show **negative values** for discharging Current and Power.
 *   **Accurate Mapping**: Pre-configured entities for Voltage, Current, Power, Capacity (Ah), Energy (kWh), Temperature, and Battery %.
 *   **Auto Reconnect**: Automatically retries on connection failure with built-in cache to prevent entity unavailability.
 *   **Editable Config**: Modify IP, Device ID, Local Key anytime after setup via the Configure button.
+*   **Fast Refresh Switch**: Turn on to poll every 1 second. Auto-reverts to normal speed after 3 minutes.
 
 ### 📱 Supported Devices
 
@@ -104,6 +105,7 @@ You need both the **Device ID** and **Local Key** to connect. Here's how to get 
 | **Total Discharge** | Ah | Cumulative discharge capacity |
 | **Meter Temp** | °C | Screen/System temperature |
 | **Probe Temp** | °C | External probe temperature |
+| **Fast Refresh** | - | Switch: ON = 1s polling, OFF = 10s polling (auto-off after 3 min) |
 
 ---
 
@@ -118,12 +120,13 @@ You need both the **Device ID** and **Local Key** to connect. Here's how to get 
 
 *   **完全本地化**：基于 `tinytuya` 进行本地 TCP 直连。无需云端依赖，无延迟。
 *   **支持协议 3.5**：专为使用涂鸦协议 3.4/3.5 的新款设备优化，支持长连接保活。
-*   **秒级刷新**：数据更新频率为 **1秒**，实现真正的实时监控。
+*   **秒级刷新**：默认 10 秒轮询。开启 **极速刷新** 开关后可达 **1秒** 实时监控。
 *   **双向电流支持**：内置 32位补码转换逻辑，正确显示充电（正数）和放电（负数）的 **电流** 与 **功率**。
 *   **精准映射**：已预先配置好电压、电流、功率、容量 (Ah)、电量 (kWh)、温度、电量百分比等实体，无需手动映射 DP ID。
 *   **修复单位报错**：修复了 Ah 单位导致的 HA 日志报错问题。
 *   **自动重连**：连接失败时自动重试，内置数据缓存防止实体变为不可用状态。
 *   **可编辑配置**：添加集成后随时可以修改 IP、Device ID、Local Key 等参数。
+*   **极速刷新开关**：打开即秒级同步，3分钟后自动恢复常规速度，防止长期高频轮询影响设备稳定性。
 
 ### 📱 支持设备
 
@@ -203,6 +206,7 @@ You need both the **Device ID** and **Local Key** to connect. Here's how to get 
 | **累计放电容量** | Ah | 累计统计数据 |
 | **仪表温度** | °C | 屏幕/系统温度 |
 | **探头温度** | °C | 外置探头温度 |
+| **极速刷新** | - | 开关：开 = 1秒轮询，关 = 10秒轮询（3分钟后自动关闭） |
 
 ### ❓ 常见问题
 
